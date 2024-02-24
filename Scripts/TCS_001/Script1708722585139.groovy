@@ -53,19 +53,20 @@ WebUI.setEncryptedText(findTestObject('homePage/formInputNewUser/passwordField')
  */
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/date/dropDownDays'))
 
-WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/date/dateOptions'))
+WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/date/dateOptions', [('index') : date]))
 
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/months/dropDownMonths'))
 
-WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/months/monthsOption'))
+WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/months/monthsOption', [('months') : months]))
 
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/years/dropDownYears'))
 
-WebUI.scrollToElement(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption'), 0)
+WebUI.scrollToElement(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption', [('years') : months]), 0)
 
-WebUI.waitForElementClickable(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption'), 0)
+WebUI.waitForElementClickable(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption', [('years') : years]), 
+    0)
 
-WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption'))
+WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption', [('years') : years]))
 
 WebUI.scrollToElement(findTestObject('homePage/formInputNewUser/addressField2'), 10)
 

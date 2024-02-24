@@ -6,18 +6,25 @@
    <elementGuidId>235fcd1c-67a1-44e1-b055-d8b3d1887342</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@class='selector']//select[@id='days']//option[@value='${date}']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@class='selector']//select[@id='days']//option[@value='6']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='selector']//select[@id='days']//option[@value='${date}']</value>
+      <webElementGuid>2a708489-63fb-4102-98a5-e292b7e48d2d</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

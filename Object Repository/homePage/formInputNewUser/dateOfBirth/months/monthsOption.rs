@@ -6,13 +6,22 @@
    <elementGuidId>3dc699ba-1138-4291-a88a-30ef6dddec52</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@id='uniform-months']//select[@id='months']//option[@value='${months}']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='uniform-months']//select[@id='months']//option[@value='1']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='uniform-months']//select[@id='months']//option[@value='${months}']</value>
+      <webElementGuid>fd872622-c1d6-461a-bd00-05fe00a95ff1</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>
