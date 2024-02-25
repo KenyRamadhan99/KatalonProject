@@ -11,9 +11,17 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='country']/ child :: *[@value='India']</value>
+         <value>//select[@id='country']/ child :: *[@value='${country}']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//select[@id='country']/ child :: *[@value='${country}']</value>
+      <webElementGuid>6410b25a-18b4-4864-a5e8-79b35b6a9cc2</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

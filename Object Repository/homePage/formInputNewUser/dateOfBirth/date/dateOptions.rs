@@ -17,7 +17,7 @@
          <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -25,6 +25,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//div[@class='selector']//select[@id='days']//option[@value='${date}']</value>
-      <webElementGuid>2a708489-63fb-4102-98a5-e292b7e48d2d</webElementGuid>
+      <webElementGuid>12d69edf-8b54-4e5c-8914-a213b7f0d0dc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

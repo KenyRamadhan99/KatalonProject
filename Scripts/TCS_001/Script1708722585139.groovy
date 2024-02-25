@@ -27,9 +27,9 @@ WebUI.click(findTestObject('homePage/landingPage/signUpAndLoginBtn'))
 
 WebUI.verifyElementVisible(findTestObject('homePage/newUserSignUp/newUserSignUpText'))
 
-WebUI.setText(findTestObject('homePage/newUserSignUp/usernameField'), 'Kenny')
+WebUI.setText(findTestObject('homePage/newUserSignUp/usernameField'), username)
 
-WebUI.setText(findTestObject('homePage/newUserSignUp/emailField'), 'kenny@gmail.com')
+WebUI.setText(findTestObject('homePage/newUserSignUp/emailField'), email)
 
 WebUI.click(findTestObject('homePage/newUserSignUp/signUpBtn'))
 
@@ -39,32 +39,17 @@ WebUI.verifyElementVisible(findTestObject('homePage/formInputNewUser/enterAccoun
 
 WebUI.click(findTestObject('homePage/formInputNewUser/radioButtonGenderMr'))
 
-WebUI.setEncryptedText(findTestObject('homePage/formInputNewUser/passwordField'), 'hNry9Acrdy4=')
+WebUI.setEncryptedText(findTestObject('homePage/formInputNewUser/passwordField'), password)
 
-/*
- * String xpath_spanDash =
- * "//div[@class='selector']//select[@id='days']//option[@value='$date']"
- * 
- * println('>>> the span dash xpath is: ' + xpath_spanDash)
- * 
- * TestObject toSpanDash = new TestObject('span_Dash2')
- * 
- * toSpanDash.addProperty('xpath', ConditionType.EQUALS, xpath_spanDash)
- */
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/date/dropDownDays'))
 
-WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/date/dateOptions', [('index') : date]))
+WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/date/dateOptions', [('date') : date]))
 
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/months/dropDownMonths'))
 
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/months/monthsOption', [('months') : months]))
 
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/years/dropDownYears'))
-
-WebUI.scrollToElement(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption', [('years') : months]), 0)
-
-WebUI.waitForElementClickable(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption', [('years') : years]), 
-    0)
 
 WebUI.click(findTestObject('homePage/formInputNewUser/dateOfBirth/years/yearsOption', [('years') : years]))
 
@@ -74,27 +59,27 @@ WebUI.click(findTestObject('homePage/formInputNewUser/checkBox1'))
 
 WebUI.click(findTestObject('homePage/formInputNewUser/checkBox2'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/firstNameField'), 'Kenzy')
+WebUI.setText(findTestObject('homePage/formInputNewUser/firstNameField'), firstname)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/lastNameField'), 'Roc')
+WebUI.setText(findTestObject('homePage/formInputNewUser/lastNameField'), lastname)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/companyField'), 'ABC')
+WebUI.setText(findTestObject('homePage/formInputNewUser/companyField'), company)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/addressField1'), 'JKRT')
+WebUI.setText(findTestObject('homePage/formInputNewUser/addressField1'), address1)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/addressField2'), 'JAKSEL')
+WebUI.setText(findTestObject('homePage/formInputNewUser/addressField2'), address2)
 
 WebUI.click(findTestObject('homePage/formInputNewUser/dropDownCountry'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('homePage/formInputNewUser/countryOption'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('homePage/formInputNewUser/countryOption', [('country') : country]), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/stateField'), 'JKT')
+WebUI.setText(findTestObject('homePage/formInputNewUser/stateField'), state)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/cityField'), 'BKS')
+WebUI.setText(findTestObject('homePage/formInputNewUser/cityField'), city)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/zipcodeField'), '1234')
+WebUI.setText(findTestObject('homePage/formInputNewUser/zipcodeField'), zipcode)
 
-WebUI.setText(findTestObject('homePage/formInputNewUser/mobileNumberField'), '02139192')
+WebUI.setText(findTestObject('homePage/formInputNewUser/mobileNumberField'), mobilenumber)
 
 WebUI.click(findTestObject('homePage/formInputNewUser/createAccountBtn'))
 
